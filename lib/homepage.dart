@@ -25,8 +25,6 @@ class _State extends State<Homepage> {
   AudioPlayer _audioPlayer = AudioPlayer();
 
   void _playAudio() async {
-    // Replace the URL with the path to your local audio file or an online URL
-    // String url = 'assets/music.mp3';
     await _audioPlayer.play(AssetSource("music.mp3"));
     _audioPlayer.setVolume(10);
   }
